@@ -14,9 +14,9 @@ streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
 # reads in csv and puts into variable my_fruit_list
 my_fruit_set = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
-
-streamlit.multiselect("Pick some fruits:", list(my_fruit_set.index))
 my_fruit_list = my_fruit_set[['Fruit']]
+
+streamlit.multiselect("Pick some fruits:", list(my_fruit_list))
 
 # displays dataframe
 streamlit.dataframe(my_fruit_set)
