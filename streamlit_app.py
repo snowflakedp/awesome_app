@@ -2,8 +2,7 @@ import streamlit
 import pandas
 
 streamlit.set_page_config(page_title="HealthyDiner", page_icon=":tada:", layout="wide")
-streamlit.header('Welcome to Our Diner :wave:')
-streamlit.title('My Parents New Healthy Diner')
+streamlit.title('Welcome to Our the New Healthy Diner :wave:')
 
 streamlit.header('Breakfast Favorites')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
